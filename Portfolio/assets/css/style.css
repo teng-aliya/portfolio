@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto', sans-serif;
+}
+
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+	background: url(../img/header-background.png);
+	background-size: cover;
+	width: 95vw;
+	height: auto;
+    position: relative;
+}
+
+header nav {
+	background: none;
+}
+
+header .navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   border-color: white;
+}
+
+header .card{
+	width: 60%;
+	height: 60%;
+	background-color: #E74E02;
+}
+
+header .card .btn {
+	color: #E74E02;
+}
+
+#triangle {
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	height: 380px;
+	width: 95vw;
+	background-color: #3F378C;
+	transform: rotate(-180deg);
+}
+
+.about-text {
+	clip-path: polygon(27% 1%, 94% 0, 79% 100%, 10% 100%);
+	background-color: #E74E02;
+    font-size: 25px;
+}
+
+.about-text p {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#skills .btn{
+    z-index: 3;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
+  
+#skills .card {
+    width: 60%;
+    min-height: 560px;
+    margin: 50px auto;
+    position: relative;
+  }
+
+#skills .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;  }
+  
+#skills .front {
+    background-color: #E74E02;
+    z-index: 2;
+  }
+  
+#skills .back {
+    z-index: 1;
+    background-color: #3F378C;
+    transform:rotateY(180deg);
+  }
+
+
+#skills .btn{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    background: white;
+    transform: rotate(-180deg);
+    border: solid white 2px;
+    border-radius: 10px;
+    color: #E74E02;
+  }
+
+#skills ul {
+	list-style-type: none;
+	margin-right: 4em;
+}
+
+#skills ul li {
+	padding-bottom: 1.5em;
+}
+
+#skills img {
+	width: 18%;
+	height: auto;
+	display: inline-block;
+}
+
+#process h2 {
+	border-bottom: 2px solid #E74E02;
+}
+
+#process p {
+	margin-left: 2%;
+    font-size: 20px;
+}
+
+#process .process-list {
+	width: 90vw;
+}
+
+#process ol {
+    counter-reset:item; 
+    margin:0; 
+    padding-left:0; 
+}
+#process ol>li {
+    counter-increment:item; 
+    list-style:none inside; 
+    margin: 40px 0;
+    overflow: hidden;
+    font-size: 16px !important;
+    line-height: 1.3;
+}
+#process ol>li:before {
+    content:counter(item) ;
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    background: #E74E02;
+    color: white;
+    text-align: center; 
+    font-weight: 100;
+    float: left;
+}
+
+.card-img:hover {
+  transform: scale(1.1); 
+  transition: 0.5s;
+}
+
+#contact .info {
+	background-color: #E74E02;
+}
+
+#contact .outer {
+	background-color: #3F378C;
+}
+
+#contact .inner {
+	background-color: #E74E02;
+	color: white;
+}
+
+#contact .btn {
+	color: #E74E02;
+	background-color: white;
+}
+
+#contact .card {
+    font-size: 20px;
+}
+
+@media (max-width: 992px){
+    #triangle {
+        visibility: hidden;
+    }
+
+    header .card {
+        width: auto;
+        height: auto;
+    }
+}
